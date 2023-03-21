@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+<!-- CTRL + Shift + P + digitar Wrap = Envelopar texto com uma tag (escrever a tag depois dos comandos) -->
+
+    <!-- Imprimir um código fonte (Texto em formato de código) em tela  - Tag code -->
+    <h2>Código Fonte</h2>
+    <p>O comando document.getElementById('teste') é escrito em JavaScript</p>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript</p>
+
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript</p>
+
+<!-- Tag pre faz com que seja mantida a indentação do código inserido no corpo da página - Geralmente usada englobando um code -->
+<pre>
+    <code>
+        escreval("Digite um número")
+        leia(numero)
+        se(num mod2 = 0)entao
+            escreval("O número é par")
+        senao
+            escreval("O número é ímpar")
+        fimse
+    </code>
+</pre>
+
+<!-- Citações em Texto -->
+<!-- Citação direta - Auxilia os buscadores no direcionamento quando houver citações dentro do site - mais ou menos como palavras-chave para os buscadores entenderem que se trata de uma citação -->
+    <h2>Citações diretas</h2>
+    <p>Como diria o pai de um amigo <q>o computador é um burro mais rápido</q></p>
+
+<!-- Citações completas - também útil para os mecanismos de busca - aplica o recuo para citações longas -->
+<h2>Citações Completas</h2>
+<p>Segundo o autor Maurício Sammy Silva no livro <em><strong>"Criando sites com HTML"</strong></em> </p>
+
+<blockquote cite="https://books.google.com.br/books?id=_HBVQ-w5ZcoC&printsec=frontcover&hl=pt-BR#v=onepage&q&f=false">
+    é um programa destinado a visualizar arquivos Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, est. Rerum maxime harum dolorum ab est eaque eos. Fugit officia necessitatibus inventore nihil, reiciendis repellendus consequatur ex corporis obcaecati enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat unde aperiam harum repellendus non commodi ipsa molestiae amet, quasi id perspiciatis dolorum aliquam temporibus ducimus cupiditate sit alias maxime sunt.
+</blockquote>
+
+<!-- Abreviações -->
+<!-- Em title é inserido o significado da abreviação - fica aparênte quando coloco o mouse sob o texto, na execução -->
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr></p>
+
+<p>Estou estudando <abbr title="Cascading Style Sheet">CSS</abbr></p>
+
+<!-- Texto invertido a direita -->
+<h2>Texto invertido a direita</h2>
+<p><bdo dir="rtl">Estou aprendendo HTML</bdo></p>
+
+ <!-- Criação de link entre páginas (Hiperlink)  -->
+ <p>
+    Voltar para a página principal <a href="index.html">clique aqui</a>
+</p>
+
+</body>
+</html>
