@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Divs</title>
+
+    <style>
+       /* Negrito maior */
+       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+        /* Negrito menor */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+        /* Texto comum */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+       
+       /* Este * significa que será válido para todo o documento, similar ao que vimos em SQL */ 
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+
+        header{
+            background-color: #5B2C6B;
+            /* Padding é a expressura da borda */
+            padding: 2px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            /* Bordas arredondadas */
+            border-start-start-radius: 10px;
+            border-start-end-radius: 10px;
+            margin-block-end: 3px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+        }
+
+        nav{
+            /* Float, é a posição do nav (menu) */
+            float: left;
+            width: 10%;
+            height: 300px;
+            background-color: #9246AB;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-start-end-radius: 10px;
+            border-end-end-radius: 10px;
+            
+        }
+
+        nav ul{
+            /* List-style-type é a definição do tipo da lista */
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        nav ul button {
+            width: 100px;
+            height: 50px;
+            background-color: #5B2C6B;
+            color: white;
+            padding: 2px;
+            margin: 1px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+        }
+
+        article{
+            float: left;
+            padding: 20px;
+            /* Usando o % o item vai se ajustar ao tamanho da página */
+            width: 90%;
+            background-color: white;
+            height: 300px;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+
+        }
+
+        article h1{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+
+        /* Limpeza após as colunas */
+        section::after{
+            /* Conteúdo */
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer{
+            margin-block-start: 3px;
+            background-color: #5B2C6B;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            border-end-start-radius: 10px;
+            border-end-end-radius: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+
+        }
+
+        @media(max-width:600px){
+            nav, article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        A tag HEAD é sempre utilizada como filha direta da tag html e serve para passar informações ao navegador que não serão apresentadas na tela para o usuário. É dentro dessa tag, por exemplo, que pedimos para o navegador carregar um arquivo CSS dentre outras coisas!
+
+        Já a tag HEADER surgiu no HTML5 e é utilizada dentro da tag body para representar o cabeçalho da página! -->
+
+    <!-- Foi realizada a divisão da página em três partes (Header, Section e Footer) -->
+    
+    <!-- Cabeçário -->
+    <header>
+        <h1>Superior</h1>
+    </header>
+
+    <!-- Sessões -->
+    <section>
+        <!-- Coluna da Esquerda (Menu lateral a esquerda ou superior flutuando) - Links para chamar os conteúdos da página -->
+        <nav>
+            <!-- Lista não ordenada - UL -->
+            <ul>
+                <button>Item 1</button>
+                <button>Item 2</button>
+                <button>Item 3</button>
+                <button>Item 4</button>
+                <button>Item 5</button>
+            </ul>
+        </nav>
+        <!-- Conteúdo da Página, que não está nos itens do menu (nav) -->
+        <article>
+            <h1>Item 1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id aliquam, nobis exercitationem, maxime culpa quod aspernatur itaque quia cupiditate, debitis quo sed vel harum esse hic nihil enim quos doloremque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur error voluptatibus laudantium aliquid, at rem ratione temporibus asperiores quisquam veniam nulla similique architecto qui distinctio quos dolor nobis sapiente?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perspiciatis facilis, neque quas mollitia ratione ullam ipsum aspernatur? Provident maiores fuga beatae fugiat impedit explicabo nemo voluptatem. Consectetur, laudantium nostrum?</p>
+        </article>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>
+            Rodapé
+        </p>
+    </footer>
+
+ <!-- O que estiver em script, que geralmente vai ao final da página, é o que será feito pelo JavaScript -->
+ <!-- ######### USANDO CONCEITOS DE JAVASCRIPT ######### -->   
+    <script>
+        /* Mensagem de Alerta com botão de Ok */
+        window.alert('Primeiro JS')
+
+        /* Mensagem de Alerta com botão de Ok e Cancelar (True or False) */
+        window.confirm('Deseja continuar?')
+
+        /* Mensagem de Alerta com caixa de texto para interação e botão de ok e cancelar */
+        window.prompt('Digite o seu nome.')
+        window.prompt('Digite o seu nome:','Seu nome')
+    </script>
+
+</body>
+
+</html>
