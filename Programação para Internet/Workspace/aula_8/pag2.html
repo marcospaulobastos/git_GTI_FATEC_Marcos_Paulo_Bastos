@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#area {
+            font: bold 20pt arial;
+            background-color: rgb(4, 101, 4);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="area">
+        Interaja
+    </div>
+
+    <script>
+
+        var a = window.document.getElementById('area')
+
+        var n = 0
+
+        /* Adicionando eventos */
+        /* Eventos = Disparar uma execução */
+
+        a.addEventListener('click', clicar) /* clicar */
+        a.addEventListener('mouseenter', entrar) /* posicionar o mouse dentro da div */
+        a.addEventListener('mouseout', sair) /* posicionar o mouse fora da div */
+
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou '+n+' vezes.'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu'
+            a.style.background = 'green';
+            n++
+        }
+
+    </script>
+
+</body>
+
+</html>

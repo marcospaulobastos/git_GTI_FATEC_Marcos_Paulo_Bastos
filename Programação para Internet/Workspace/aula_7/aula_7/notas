@@ -1,0 +1,25 @@
+Como nomear uma variável
+1- Podemcomeçar com "letra, $, _" (utilizando boas práticas de programação, sempre começar o nome da var com letra minúscula).
+2- Não podem começar com números.
+1num- invalido
+num1- válido
+nomeAluno
+nomeProfessor
+nome_Aluno
+$nome
+_nomeAluno
+3- É possível utilizar letras e números.
+4-Não podem conter espaços.
+5- não podem usar palavras reservadas.
+6- maiusculas e minúsculas fazem diferença.
+7- Escolher nomes coerentes para definir as vars. (o nome deve referenciar o tipo de informação que irá receber).
+    tel = telefone
+    end = endereço
+8- evite se tornar um programador contador N1,N2,N3 ou alfabeto A,B, C 
+
+// comentar uma linha
+/**/ comentar várias linhas
+
+Sinal +
+"+" qdo trabalhado com String tem função de concatenar
+"+"utilizado com números tem função de adição

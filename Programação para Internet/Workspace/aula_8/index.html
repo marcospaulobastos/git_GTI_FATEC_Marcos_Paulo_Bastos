@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com DOM</title>
+
+    <!-- CSS - Definição de estilo -->
+    <style>
+        body {
+            background-color: rgb(30, 30, 30);
+            font: Arial;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HTML -->
+    <h1>Trabalhando com DOM</h1>
+    <p>Resultado</p>
+    <p>como usar <strong>DOM</strong></p>
+    <div id="msg">Clique aqui</div>
+
+
+    <!-- DOM - Documento object Model (modelo de documentos para objetos)
+    Mostra a hierarquia da página (parents or childs);
+    Textos utilizados nos comandos em JS
+
+                        Windowns
+                            ^
+        Location           Document         History
+                            ^
+                            HTML
+                head                    bory
+                ^                         ^
+        meta           tittle       h1  p   div 
+                                        ^
+                                        strong
+                                    -->
+
+    <!-- JavaScript -->
+    <script>
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        
+
+        p1.style.color = 'blue'
+
+        window.document.write('Está escrito: ' + p1.innerText)
+        
+        /* definindo o estilo para texto dentro de script JavaScript */
+                
+        var corpo = window.document.body
+        corpo.style.background = 'gray'
+
+        var d = window.document.getElementById('msg')
+        
+        d.style.background='green'
+
+        /* query selecton - classe de objetos */
+        var e = window.document.querySelector('div#msg').style.color='blue'
+
+    </script>
+
+
+</body>
+
+</html>

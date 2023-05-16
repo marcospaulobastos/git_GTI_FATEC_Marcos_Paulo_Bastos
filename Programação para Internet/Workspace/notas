@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+teste ? true:false
+idade >=18?'balada':'fica em casa'
+
+
+Precedência de Operadores
+() 
+** exponenciação
+*, /, % (mod)
++,-
+
+Exemplo:
+    n1 = 10, n2 = 10, n3 = 10, n4 = 10
+    n1+n2+n3+n4/4 = 32,5
+    (n1+n2+n3+n4)/4 = 10
